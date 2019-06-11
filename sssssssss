@@ -1,0 +1,75 @@
+<section class="content">
+  <div class="gallery-section-1">
+    <div class="form-enc">
+      <h1>Encomenda</h1>
+      <div class="border"></div>
+      <center>
+        <form>
+          <section>
+            <h2>Informações de contato</h2>
+            <input type="text" name="nome" placeholder="Nome completo" required/>
+            <input type="email" name="email" placeholder="E-mail" required/><br />
+            <input type="tel" name="telefone" placeholder="Telefone" required/>
+            <input type="tel" name="telefoneopc" placeholder="Telefone" />
+          </section>
+
+          <section>
+            <h2>Endereço</h2>
+            <input type="text" name="rua" placeholder="Nome da rua" required><br>
+            <input type="text" name="numero" placeholder="Número" required>
+            <input type="text" name="complemento" placeholder="Complemento" required><br>
+            <input type="text" name="bairro" placeholder="Bairro" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+            <input type="text" name="estado" placeholder="Estado" required>
+            <input type="text" name="cep" placeholder="CEP" required>
+          </section>
+
+          <section>
+            <h2>Pedido</h2>
+            <select id="produto" name="produto">
+              <option value="bolo" disabled>Bolos</option>
+              <option value="moussechoc" >Mousse de Chocolate</option>
+              <option value="naked">Naked de cenoura c/ chocolate</option>
+              <option value="banana">Banana s/ gluten e s/ lactose</option>
+              <option value="doces" disabled>Doces</option>
+              <option value="brigadeiro">Brigadeiro (cento)</option>
+              <option value="uva">Surpresa de uva (cento)</option>
+              <option value="trufa">Mini trufa (cento)</option>
+            </select>
+            <br />
+            <button type="button">+</button>
+            <br />
+            <br />
+            <label>Preço total: R$</label>
+          </section>
+          <button type="submit">Enviar pedido</button>
+        </form>
+      </center>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="sobre">
+  <div class="gallery-section-1">
+      <h1>Sobre</h1>
+      <div class="border"></div>
+      <div class="card">
+
+      </div>
+  </div>
+</section>
+
+
+<div class="footer">
+  <center>
+    <section>
+      <a href="#"><img src="img/logo.png"/></a>
+    </section>
+
+    <section>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </section>
+  </center>
+</div>

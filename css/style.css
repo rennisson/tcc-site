@@ -1,0 +1,428 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.header{
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+}
+
+.logo img {
+  float: left;
+  margin-left: 5%;
+  width: 120px;
+  height: 120px;
+}
+
+.menu{
+  float: right;
+  margin: 52px 0;
+  padding: 0 20px;
+  margin-right: 5%;
+  transition: 1s;
+}
+
+.menu a{
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.hover-underline-animation{
+    display:inline-block;
+    position:relative;
+    color:#000;
+}
+.hover-underline-animation::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    transform:scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color:#000;
+    transform-origin:bottom right;
+    transition:transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after{
+  transform:scaleX(1);
+  transform-origin:bottom left;
+}
+.show-menu-btn,.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+  margin-right: 5%;
+  margin-top: 35px;
+}
+
+.show-menu-btn i{
+  padding: 10px;
+}
+
+.hide-menu-btn:hover{
+  color: #fff;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    right: -105%;
+    top: -10%;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    z-index: 10;
+    transition: 1s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right:65px;
+  }
+  #chk:checked ~ .menu{
+    right: -5%;
+    height: 101%;
+    z-index: 1;
+  }
+  .hover-underline-animation::after{
+     content:'';
+     position:absolute;
+     margin-left: 30%;
+     width:40%;
+     transform:scaleX(0);
+     height:2px;
+     bottom:0;
+     left:0;
+     background-color:#000;
+     transform-origin:bottom right;
+     transition:transform 0.50s ease-out;
+ }
+}
+
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/torta2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.banner h1 {
+  font-family: 'Katherine Free';
+  padding: 0;
+  margin: 0;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: rgba(0, 0, 0, 0.4) 10px 5px 2px;
+}
+
+@media screen and (max-width:480px) {
+  .banner h1 {
+    font-size: 4em;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .banner h1 {
+    font-size: 3em;
+    font-weight: bolder;
+  }
+}
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #fff;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 30px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+.form-enc h1 {
+  text-transform: uppercase;
+}
+
+form {
+  width: 70%;
+}
+
+form input {
+  width: 60%;
+  border-radius: 10px;
+  border-color: #000;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px;
+  text-align: center;
+  transition: .4s;
+}
+
+form input:focus {
+  width: 70%;
+  transition: .4s;
+}
+
+form select {
+  width: 50%;
+  border-radius: 10px;
+  border-color: #000;
+  border-width: medium;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 10px;
+  transition: .4s;
+}
+
+form select:focus {
+  width: 60%;
+  transition: .4s;
+}
+
+form input[type="tel"], form input[name="numero"] , form input[name="complemento"] {
+  width: 25%;
+}
+
+form input[type="tel"]:focus, form input[name="numero"]:focus , form input[name="complemento"]:focus {
+  width: 35%;
+}
+
+section label {
+  font-size: 30px;
+}
+
+form button[type="button"] {
+  border-radius: 50%;
+  border-color: #000;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin: 10px;
+  transition: .4s;
+}
+
+form button[type="submit"] {
+  border-radius: 10px;
+  border-color: #000;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  transition: .4s;
+}
+
+form button:hover {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  transition: .4s;
+}
+
+@media screen and (max-width:480px) {
+  form {
+    width: 90%;
+  }
+
+  form input {
+    width: 80%;
+  }
+
+  form input:focus {
+    width: 90%;
+  }
+
+  form select {
+    width: 80%;
+  }
+
+  form select:focus {
+    width: 90%;
+  }
+  form select
+}
+
+.card {
+  width: 60%;
+  height: 70vh;
+  background-color: #f1f1f1;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.footer {
+  background: #424242;
+  height: 500px;
+}
+
+.footer a img {
+  width: 200px;
+  height: 200px;
+  margin-top: 60px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #fff;
+  padding: 5px;
+}
+
+.fas {
+  color: #000;
+}
+
+.fab {
+  color: #fff;
+  font-size: 35px;
+  padding: 0 10px;
+}
+
+.testimonials{
+  padding: 40px 0;
+  background: #fff;
+  color: #434343;
+  text-align: center;
+}
+.testimonials h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 10px 10px 8px #888888;
+}
+.testimonial img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.name{
+  font-size: 25px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.doce{
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <title>TCC - Prototipo</title>
+    <meta name="viewport" content="width=device, initial-scale=1.0" />
+  </head>
+  <body>
+
+    <div class="header">
+      <a class="logo" href="#"><img src="img/logo.png"/></a>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul class="menu">
+        <a href="#" class="hover-underline-animation">Home</a>
+        <a href="#" class="hover-underline-animation">Produtos</a>
+        <a href="#" class="hover-underline-animation">Encomendas</a>
+        <a href="#" class="hover-underline-animation">Sobre</a>
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </div>
+
+    <div class="banner">
+      <h1>Danessa cakes</h1>
+    </div>
+
+    <section class="prod">
+      <div class="gallery-section">
+        <div class="inner-width">
+          <h1>Produtos</h1>
+          <div class="border"></div>
+          <div class="gallery">
+
+            <a href="img/gateaux-de-voyage-2.jpg" class="image">
+              <img src="img/gateaux-de-voyage-2.jpg" alt="" title="bolo">
+            </a>
+
+            <a href="img/brigadeiro.jpe" class="image">
+              <img src="img/brigadeiro.jpe" alt="">
+            </a>
+
+            <a href="img/torta.jpeg" class="image">
+              <img src="img/torta.jpeg" alt="">
+            </a>
+
+            <a href="img/bolo-colher.jpg" class="image">
+              <img src="img/bolo-colher.jpg" alt="">
+            </a>
+
+            <a href="img/naked.png" class="image">
+              <img src="img/naked.png" alt="">
+            </a>
+
+            <a href="img/churros.png" class="image">
+              <img src="img/churros.png" alt="">
+            </a>
+
+            <a href="img/trufas.jpg" class="image">
+              <img src="img/trufas.jpg" alt="">
+            </a>
+
+            <a href="img/pao-de-mel.jpg" class="image">
+              <img src="img/pao-de-mel.jpg" alt="">
+            </a>
+
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+    <section class="encomendas">
+      <div class="gallery-section">
+        <div class="form-enc">
+          <h1>Encomenda</h1>
+          <div class="border"></div>
+          <center>
+            <form>
+              <section>
+                <h2>Informações de contato</h2>
+                <input type="text" name="nome" placeholder="Nome completo" required/>
+                <input type="email" name="email" placeholder="E-mail" required/><br />
+                <input type="tel" name="telefone" placeholder="Telefone" required/>
+                <input type="tel" name="telefoneopc" placeholder="Telefone" />
+              </section>
+
+              <section>
+                <h2>Endereço</h2>
+                <input type="text" name="rua" placeholder="Nome da rua" required><br>
+                <input type="text" name="numero" placeholder="Número" required>
+                <input type="text" name="complemento" placeholder="Complemento" required><br>
+                <input type="text" name="bairro" placeholder="Bairro" required>
+                <input type="text" name="cidade" placeholder="Cidade" required>
+                <input type="text" name="estado" placeholder="Estado" required>
+                <input type="text" name="cep" placeholder="CEP" required>
+              </section>
+
+              <section>
+                <h2>Pedido</h2>
+                <select id="produto" name="produto">
+                  <option value="bolo" disabled>Bolos</option>
+                  <option value="moussechoc" >Mousse de Chocolate</option>
+                  <option value="naked">Naked de cenoura c/ chocolate</option>
+                  <option value="banana">Banana s/ gluten e s/ lactose</option>
+                  <option value="doces" disabled>Doces</option>
+                  <option value="brigadeiro">Brigadeiro (cento)</option>
+                  <option value="uva">Surpresa de uva (cento)</option>
+                  <option value="trufa">Mini trufa (cento)</option>
+                </select>
+                <br />
+                <button type="button">+</button>
+                <br />
+                <br />
+                <label>Preço total: R$</label>
+              </section>
+              <button type="submit">Enviar pedido</button>
+            </form>
+          </center>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre">
+      <div class="testimonials">
+        <div class="inner">
+          <h1>Sobre</h1>
+          <div class="border"></div>
+
+          <div class="row">
+              <div class="col">
+                <div class="testimonial">
+                  <img src="img/logo.png" alt="">
+                  <div class="name">Danessa Cakes</div>
+                  <div class="doce">
+                    <i class="fas fa-candy-cane"></i>
+                    <i class="fas fa-candy-cane"></i>
+                    <i class="fas fa-candy-cane"></i>
+                    <i class="fas fa-candy-cane"></i>
+                    <i class="fas fa-candy-cane"></i>
+                  </div>
+
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer">
+        <center>
+          <section>
+            <a href="#"><img src="img/logo.png"/></a>
+          </section>
+
+          <section>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </section>
+          <br />
+          <br />
+        </center>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function() {
+        $('.gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          closeOnContentClick: false,
+          closeBtnInside: false,
+          mainClass: 'mfp-with-zoom mfp-img-mobile',
+          image: {
+            verticalFit: true,
+            titleSrc: function(item) {
+              return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+            }
+          },
+          gallery: {
+            enabled: true
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
