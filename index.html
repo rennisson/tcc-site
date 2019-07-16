@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -14,19 +15,20 @@
 
     <div class="header">
       <a class="logo" href="#"><img src="img/logo.png"/></a>
-      <input type="checkbox" id="chk">
-      <label for="chk" class="show-menu-btn">
-        <i class="fas fa-bars"></i>
+
+      <input id="menu-hamburger" class="menu-hamburger" type="checkbox" />
+
+      <label for="menu-hamburger">
+        <div class="menu">
+          <span class="hamburger"></span>
+        </div>
       </label>
 
-      <ul class="menu">
-        <a href="#" class="hover-underline-animation">Home</a>
-        <a href="#" class="hover-underline-animation">Produtos</a>
-        <a href="#" class="hover-underline-animation">Encomendas</a>
-        <a href="#" class="hover-underline-animation">Sobre</a>
-        <label for="chk" class="hide-menu-btn">
-          <i class="fas fa-times"></i>
-        </label>
+      <ul>
+        <li><a href="#" class="hover-underline-animation">Home</a></li>
+        <li><a href="#" class="hover-underline-animation">Produtos</a></li>
+        <li><a href="#" class="hover-underline-animation">Encomendas</a></li>
+        <li><a href="#" class="hover-underline-animation">Sobre</a></li>
       </ul>
     </div>
 

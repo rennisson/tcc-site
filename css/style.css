@@ -23,7 +23,8 @@ html {
   height: 120px;
 }
 
-.menu{
+
+.//menu{
   float: right;
   margin: 52px 0;
   padding: 0 20px;
@@ -31,7 +32,7 @@ html {
   transition: 1s;
 }
 
-.menu a{
+.//menu a/{
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -53,12 +54,12 @@ html {
     bottom:0;
     left:0;
     background-color:#000;
-    transform-origin:bottom right;
+    transform-origin:bottom center;
     transition:transform 0.25s ease-out;
 }
 .hover-underline-animation:hover::after{
   transform:scaleX(1);
-  transform-origin:bottom left;
+  transform-origin:bottom center;
 }
 .show-menu-btn,.hide-menu-btn {
   transition: 0.4s;
